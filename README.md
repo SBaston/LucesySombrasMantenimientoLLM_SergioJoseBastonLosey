@@ -1,38 +1,73 @@
-# Caso Práctico: Luces y sombras del uso del LLMs para el mantenimiento del software
+# Caso Práctico: **Luces y Sombras del Uso de LLMs en el Mantenimiento del Software**
 
-Bienvenido a nuestro caso práctico donde abordaremos el uso del LLMs para el mantenimiento del software. 
+Bienvenido al caso práctico donde exploraremos cómo los **Modelos de Lenguaje (LLMs)** pueden ayudar —y a veces dificultar— el **mantenimiento de software**.
 
-Para la realización de este caso práctico queremos que os pongais en la siguiente situación/escenario: 
+## 🧩 Escenario
 
-"Sois unos nuevos trabajadores de una gran empresa la cual os ha contratado hace varios meses. Tras los primeros meses de adaptación y aprendizaje al estilo de trabajo de la empresa, se os ha encomendado la gran primera tarea de manera individual. 
-Esta tarea consiste en entender un código en Python que realizó un antiguo desarrollador que lamentablemente ya no se encuentra en la empresa. Este código es de vital importancia para el siguiente proyecto de la empresa. 
-Vuestro jefe os ha pedido que cogais ese código y lo entendais y que le realiceis las modificaciones necesarias que veais oportunas ya que la semana que viene tendréis que presentarselo a vuestros superiores."
+Imagina la siguiente situación:
 
-Aquí vuestros ángeles de la guarda David y Adrián os van a ayudar a realizar esta tarea para que vuestro jefe no os eche y podais conservar este trabajo que tanto sudor y lágrimas os ha costado conseguir. Os proponemos el uso de una IA para detectar errores y mejorar la legebilidad del código. 
-La IA que usaries es Codium que es una plataforma de revisiones de código con IA que detecta errores y ayuda a mantener la calidad del código. 
+> *Sois nuevos trabajadores en una gran empresa que os ha contratado hace unos meses. Tras un periodo de adaptación al estilo de trabajo, se os asigna vuestra primera gran tarea individual: entender un código en Python desarrollado por un antiguo empleado que ya no está en la empresa. Este código es fundamental para el próximo proyecto, y vuestro jefe quiere que lo entendáis, lo analicéis y realicéis las modificaciones necesarias, ya que la semana que viene deberéis presentarlo a vuestros superiores.*
 
-A continuación os mostraremos los pasos tanto previos como principales, además de las tareas que debeis de realizar para superar esta práctica y que le podais entregar el mejor resultado a vuestro jefe.
+Por suerte, vuestros “ángeles de la guarda”, **David y Adrián**, os guiarán para que vuestro jefe no os despida y podáis conservar este trabajo que tanto esfuerzo os costó conseguir. Utilizaremos una IA que nos ayudará a detectar errores y mejorar la legibilidad del código.
 
-# Pasos previos: 
-- Tener descargado Visual Studio Code
-- Tener descargado python 3, si no lo teneis descargado a través de este enlace os lo podeis descargar (https://www.python.org/downloads/).
-- Descargaros la extensión Qodo (imagen de un oso hormiguero) en VSCode. 
-- Forkear este mismo repositorio (https://github.com/davidabuinESI/LucesySombrasMantenimientoLLM.git) , añadiendole vuestro nombre.
-- Clonar vuestro repositorio forkeado localmente, obteniendo los archivos "app.py" y "app_test.py".
+La herramienta seleccionada es **Codium**, una plataforma de revisión de código con IA que detecta errores y propone mejoras para mantener la calidad.
 
-# Pasos a seguir: 
-1. Abrir el repositorio en VSCode para poder acceder a los archivos.
-2. Crear un archivo markdown (.md) llamado AnalisisNombre.md, siendo Nombre vuestro Nombre
-3. Realizar un breve ánalisis de manera individual del archivo "app.py" donde debereis de apuntar en el nuevo markdown creado (mirar paso 2) los cambios que vosotros mismo realizariais a este código.
-4. Una vez realizado el ánalisis ejecutar el test y apuntar el resultado que os de. Para ejecutar y obtener el resultado del test unicamente teneis que ejecutar el archivo nombre.py y se os ejecutará el test. 
-5. Abrir el chat de Qodo e insetarle esta línea de texto (usaremos inglés para obtener un mejor resultado):
-    "Refactor this code to make it clean, use descriptive variable names, add Type Hints and docstrings. Refactor this code       to make it clean, use descriptive variable names, add Type Hints and docstrings. Refactor and improve this code in a         new file called "RefactoringName.py" (cambiar Name por vuestro nombre). "
-6. Comprar los archivos "app.py" con "RefactoringName.py". Tendreis que ver las diferencias entre las modificaciones que ustedes habeis pensado y las modificaciones que ha realizado nuestra IA.
-7. Añadir al markdown (mirar paso 2) las principales diferencias que ustedes habeis visto entre vuestro análisis y el análisis generado por IA.
-8. Volver a ejecutar el test (mirar paso 4). ¿Habéis obtenido el mismo resultado? Si no es así, ¿a qué se ha debido? Responder estas preguntas en el markdown
-9. Revisar el código refactorizado por la IA e intentar encontrar alguna modificación innecesaria o alguna introducción de bugs lógicos o deudas técnica que la IA haya introducido a la hora refactorizar.
+A continuación se detallan los pasos previos, los pasos principales y las tareas necesarias para superar la práctica y entregar el mejor resultado posible.
 
-# Archivos a entregar
-- Archivo python "RefactoringName.py" con la refactorización que os ha generado la IA
-- Archivo markdown "AnalisisNombre.md" con los análisis, preguntas y diferencias que se os ha pedido en el enunciado
-- La entrega del campus será el enlace a vuestro repositorio forkeado en la parte de comentarios + el archivo markdown creado por ustedes
+---
+
+# 🛠️ Pasos Previos
+
+Aseguraos de tener lo siguiente:
+
+- Visual Studio Code instalado.
+- Python 3 instalado. Si no lo tenéis, podéis descargarlo desde:  
+  https://www.python.org/downloads/
+- Extensión **Qodo** (icono de oso hormiguero) instalada en VSCode.
+- Haber **forkeado** este repositorio:  
+  https://github.com/davidabuinESI/LucesySombrasMantenimientoLLM.git  
+  Añadiéndole vuestro nombre.
+- Haber clonado vuestro repositorio forkeado para obtener los archivos **`app.py`** y **`app_test.py`**.
+
+---
+
+# 📋 Pasos a Seguir
+
+1. Abrir el repositorio clonado en VSCode.
+2. Crear un archivo Markdown llamado **`AnalisisNombre.md`**, reemplazando *Nombre* por el vuestro.
+3. Realizar un **análisis individual** del archivo `app.py`.  
+   En vuestro Markdown deberéis anotar los cambios y mejoras que aplicaríais al código.
+4. Ejecutar los tests y **apuntar el resultado**.  
+   Para ello, basta con ejecutar el archivo `app_test.py`.
+5. Abrir el chat de Qodo e insertar el siguiente mensaje (en inglés, para obtener mejores resultados):
+
+    Refactor this code to make it clean, use descriptive variable names, add Type Hints and docstrings. Refactor and improve this code in a new file called "RefactoringName.py".
+*(cambiar "Name" por vuestro nombre)*
+
+6. Comparar `app.py` con `RefactoringName.py`.  
+Debéis observar las diferencias entre vuestras ideas y las modificaciones propuestas por la IA.
+7. Añadir a vuestro Markdown las principales diferencias encontradas entre vuestro análisis y la refactorización de la IA.
+8. Ejecutar nuevamente el test.  
+- ¿Habéis obtenido el mismo resultado?  
+- Si no, ¿a qué se debe?  
+Responded a estas preguntas en el Markdown.
+9. Revisar el código refactorizado por la IA e intentar detectar:
+- Modificaciones innecesarias  
+- Introducción de bugs lógicos  
+- Deuda técnica añadida por la refactorización  
+10. Subir a vuestro repositorio forkeado:
+ - El archivo Markdown  
+ - El archivo generado por la IA (**`RefactoringName.py`**)
+
+---
+
+# 📦 Archivos a Entregar
+
+- Archivo Python **`RefactoringName.py`** generado por la IA.
+- Archivo Markdown **`AnalisisNombre.md`** con análisis, respuestas y comparaciones.
+- En la entrega del campus:
+
+      - Enlace a vuestro repositorio forkeado (en los comentarios)
+      - El archivo Markdown creado.
+
+---
